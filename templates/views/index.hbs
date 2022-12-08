@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employee-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="full-page">
+      {{>navbar}}
+        <div id='login-form' class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                    <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                </div>
+
+
+                <form action="/login" id='login' class='input-group-login' method="post">
+                    <input type='text' class='input-field' placeholder='Email Id'  name="email" required>
+                    <input type='password' class='input-field' placeholder='Enter Password'  name="password" required>
+                    <input type='checkbox' class='check-box'><span>Remember Password</span>
+                    <button type='submit' class='submit-btn' value="login">Log in</button>
+                </form>
+            
+
+                <form action="/register" method="post" id='register' class='input-group-register'>
+                    <input type='text' class='input-field' placeholder='First Name'  name="firstname" required>
+                    <input type='text' class='input-field' placeholder='Last Name ' name="lastname" required>
+                    <input type='email' class='input-field' placeholder='Email Id' name="email" required>
+                    <input type='password' class='input-field' placeholder='Enter Password' name="password" required>
+                    <input type='password' class='input-field' placeholder='Confirm Password' name="confirmpassword" required>
+                    <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit' class='submit-btn' value="Register">Register</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+       {{>header}}
+
+</body>
+
+</html>
