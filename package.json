@@ -1,19 +1,31 @@
 {
   "name": "mernbackend",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node src/app.js",
-    "dev":"nodemon src/app.js -e js,hbs,css"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js -e js,hbs,css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "hbs": "^4.2.0",
-    "mongoose": "^6.8.0"
-  }
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.0",
+    "node-modules": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anujyadav-lab/Registration-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anujyadav-lab/Registration-page/issues"
+  },
+  "homepage": "https://github.com/anujyadav-lab/Registration-page#readme",
+  "description": ""
 }
